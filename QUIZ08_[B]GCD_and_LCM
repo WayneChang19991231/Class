@@ -1,3 +1,4 @@
+--------------------------------------------------------------Topic-----------------------------------------------------------------------------------------
 The properties of integer values have been studied for centuries in number theory. Two important concepts
 developed are the greatest common divisor (GC D ), and least common multiple (LCM). Given two integers
 𝑥and 𝑦. The GCD is defined as the largest integer value which can divide both 𝑥and 𝑦, while the LCM is
@@ -19,13 +20,12 @@ After the value of GCD is determined, the value of LCM can be obtained:
                                            
 Write a program to calculate the GCD and LCM. You have to wrap the calculation of GCD and LCM into
 two functions.
-Input
-The input contains several cases and ends with EOF. Each case contains
-two integer values, which in turn
-represent 𝑥and y
-Output
-For each case, output the
-GCD and LCM of 𝑥and 𝑦
+
+Input:          The input contains several cases and ends with EOF. Each case contains
+                two integer values, which in turn represent 𝑥 and y
+
+Output:         For each case, output the GCD and LCM of 𝑥 and 𝑦
+
 Sample Input
 4 7
 6 3
@@ -34,3 +34,51 @@ Sample Output
 1 28
 3 6
 3 63
+
+---------------------------------------------------------------------------------code-------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x, y;
+    while(scanf("%d %d", &x, &y) != EOF)
+    {
+        printf("%d %d\n", gcd(x,y), (x*y) / gcd(x,y));
+    }
+    return 0;
+}
+
+int gcd(int a, int b)
+{
+    if(b == 0)
+        return a;
+    else
+        return gcd(b, a%b);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
