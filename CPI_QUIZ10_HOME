@@ -8,26 +8,30 @@ int main()
     int m, n;
     int srow, scol, erow, ecol;
 
-    while(scanf("%d %d %d %d %d %d", &m, &n, &srow, &scol, erow, ecol) != EOF)
+    while(scanf("%d %d %d %d %d %d", &m, &n, &srow, &scol, &erow, &ecol) != EOF)
     {
-        if()
+        if(m == '*')
+        {
+            break;
+        }
 
         else
         {
-            int array[m][n] = {0};
+            int array[11][11] = {0};
 
             for(int i = 0; i < m; ++i)
             {
                 for(int j = 0; j < n; ++j)
                 {
-                    scanf("%d", array[i][j]);
+                    scanf("%d", &array[i][j]);
                 }
             }
-            for(int i = srow; i < erow; ++i)
+
+            for(int a = srow; a <= erow; ++a)
             {
-                for(int j = scol; j < ecol; ++j)
+                for(int b = scol; b <= ecol; ++b)
                 {
-                    printf("%d", array[i][j]);
+                    printf("%d ", array[a][b]);
                 }
                 printf("\n");
             }
@@ -38,7 +42,8 @@ int main()
     return 0;
 }
 
-------------------------------------------------------[C]Maxpooling--------------------------------------------------------------------
+
+------------------------------------------------------[A]AtoM--------------------------------------------------------------------
 
 #include <stdio.h>
 #include <stdlib.h>
