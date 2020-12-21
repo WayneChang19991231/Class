@@ -1,0 +1,92 @@
+-----------------------------------------------------------[B]Submatrix------------------------------------------------------------------------
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int m, n;
+    int srow, scol, erow, ecol;
+
+    while(scanf("%d %d %d %d %d %d", &m, &n, &srow, &scol, erow, ecol) != EOF)
+    {
+        if()
+
+        else
+        {
+            int array[m][n] = {0};
+
+            for(int i = 0; i < m; ++i)
+            {
+                for(int j = 0; j < n; ++j)
+                {
+                    scanf("%d", array[i][j]);
+                }
+            }
+            for(int i = srow; i < erow; ++i)
+            {
+                for(int j = scol; j < ecol; ++j)
+                {
+                    printf("%d", array[i][j]);
+                }
+                printf("\n");
+            }
+            printf("\n\n");
+        }
+
+    }
+    return 0;
+}
+
+------------------------------------------------------[C]Maxpooling--------------------------------------------------------------------
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int m, n, l;
+    char one, two;
+
+    while(scanf("%d %d %d %c %c", &m, &n, &l, &one, &two) != EOF)
+    {
+        if()
+        else if( one == 'U')
+        {
+            int array[m][n] = {0};
+            for(int i = 0; i < m; ++i)
+            {
+                for(int j = 0; j < n; ++j)
+                {
+                    scnaf("%d", &array[i][j]);
+                }
+            }
+            for(int i = 0; i < m; ++i)
+            {
+                for(int j = 0; j < n; ++j)
+                {
+                    printf("%d", array[i][j]);
+                }
+                printf("\n");
+            }
+            printf("\n\n");
+        }
+        else if(one == 'D')
+        {
+            int array[l] = {0};
+            for(int i = 0; i < l; ++i)
+            {
+                scanf("%d", &array[i]);
+            }
+            for(int i = 0; i < l; ++i)
+            {
+                printf("%d", array[i]);
+            }
+            printf("\n\n\n");
+        }
+    }
+    return 0;
+}
+
+
+-----------------------------------------------------------------------------------------
