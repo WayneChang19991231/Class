@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 int main()
 {
@@ -10,11 +11,10 @@ int main()
 
     while(scanf("%d %d %d %d %d %d", &m, &n, &srow, &scol, &erow, &ecol) != EOF)
     {
-        if(m == '*')
+        if( isalpha(m) )
         {
             break;
         }
-
         else
         {
             int array[11][11] = {0};
@@ -41,6 +41,7 @@ int main()
     }
     return 0;
 }
+
 
 
 ------------------------------------------------------[A]AtoM--------------------------------------------------------------------
